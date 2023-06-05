@@ -20,7 +20,7 @@ double q = 7;
 double n=p*q;
 double totient = (p-1)*(q-1);
 double e=2;
-while( e < totient && gcd(e,totient) ! = 1){
+while( e < totient && gcd(e,totient)!=1){
     e++;
 }
 double d;
