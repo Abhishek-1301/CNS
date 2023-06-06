@@ -17,7 +17,7 @@ int main(){
 	printf("\nDecrypted text:");
 	for(i=0;i<strlen(cipher);i++){
 		plain[i]=cipher[i]-key;
-		if((isupper(cipher[i]) && plain[i]>'Z') || (islower(cipher[i]) && plain[i]>'z'))
+		if((isupper(cipher[i]) && plain[i]<'A') || (islower(cipher[i]) && plain[i]<'a'))
 		cipher[i]+=26;
 		printf("%c",plain[i]);
 	}
